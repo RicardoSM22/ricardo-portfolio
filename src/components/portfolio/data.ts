@@ -9,7 +9,7 @@ import femsa1_1 from "@/assets/Femsa1/f1.jpg";
 import femsa1_2 from "@/assets/Femsa1/f2.jpg";
 import femsa1_3 from "@/assets/Femsa1/f3.jpg";
 import femsa1_4 from "@/assets/Femsa1/f4.jpg";
-import videoFemsa1 from "@/assets/Femsa1/Ejecución de ventas FEMSA.mp4";
+//import videoFemsa1 from "@/assets/Femsa1/Ejecución de ventas FEMSA.mp4";
 import femsa2_1 from "@/assets/femsa2/f1.jpg";
 import femsa2_2 from "@/assets/femsa2/f2.jpg";
 import femsa2_3 from "@/assets/femsa2/f3.jpg";
@@ -21,16 +21,16 @@ import femsa2_8 from "@/assets/femsa2/f8.jpg";
 import femsa2_9 from "@/assets/femsa2/f9.jpg";
 import femsa2_10 from "@/assets/femsa2/f10.jpg";
 import femsa2_11 from "@/assets/femsa2/f11.jpg";
-import videoFemsa2_1 from "@/assets/femsa2/Simulador VR de manejo FEMSA1.mp4";
-import videoFemsa2_2 from "@/assets/femsa2/Simulador VR de manejo FEMSA Prototipo.mp4";
-import videoFemsa2_3 from "@/assets/femsa2/Simulador VR de manejo FEMSA360.mp4";
+//import videoFemsa2_1 from "@/assets/femsa2/Simulador VR de manejo FEMSA1.mp4";
+//import videoFemsa2_2 from "@/assets/femsa2/Simulador VR de manejo FEMSA Prototipo.mp4";
+//import videoFemsa2_3 from "@/assets/femsa2/Simulador VR de manejo FEMSA360.mp4";
 import bimboWow_1 from "@/assets/BimboWow/bw1.jpg";
 import bimboWow_2 from "@/assets/BimboWow/bw2.jpg";
 import bimboWow_3 from "@/assets/BimboWow/bw3.jpg";
 import bimboWow_4 from "@/assets/BimboWow/cam_1.jpg";
 import bimboWow_5 from "@/assets/BimboWow/cam_1_1.jpg";
 import bimboWow_6 from "@/assets/BimboWow/cam_2.jpg";
-import videoBimboWow_1 from "@/assets/BimboWow/Bimbo wow.mp4";
+//import videoBimboWow_1 from "@/assets/BimboWow/Bimbo wow.mp4";
 import bimboAR_1 from "@/assets/BimboAR/target.png";
 import bimboAR_2 from "@/assets/BimboAR/info_1.png";
 import bimboAR_3 from "@/assets/BimboAR/info_2.png";
@@ -39,8 +39,7 @@ import bimboAR_5 from "@/assets/BimboAR/info_4.png";
 import bimboAR_6 from "@/assets/BimboAR/info_5.png";
 import bimboAR_7 from "@/assets/BimboAR/info_6.png";
 import bimboAR_8 from "@/assets/BimboAR/info_7.png";
-import bimboAR_9 from "@/assets/BimboAR/info_8.png";
-import videoBimboAR_1 from "@/assets/BimboAR/BImboAR.mp4";
+//import videoBimboAR_1 from "@/assets/BimboAR/BImboAR.mp4";
 import truckImg from "@/assets/project-truck.jpg";
 import enterpriseImg from "@/assets/project-enterprise.jpg";
 import planetariumImg from "@/assets/project-planetarium.jpg";
@@ -256,9 +255,9 @@ export const projects: Project[] = [
       resultsNarrative:
         "",
       media: [
-        { type: "video", src: videoFemsa2_1, caption: "" },
-        { type: "video", src: videoFemsa2_2, caption: "" },
-        { type: "video", src: videoFemsa2_3, caption: "" },
+        //{ type: "video", src: videoFemsa2_1, caption: "" },
+        //{ type: "video", src: videoFemsa2_2, caption: "" },
+        //{ type: "video", src: videoFemsa2_3, caption: "" },
         { type: "image", src: femsa2_1, caption: "" },
         { type: "image", src: femsa2_2, caption: "" },
         { type: "image", src: femsa2_3, caption: "" },
@@ -415,7 +414,7 @@ export const projects: Project[] = [
         { type: "image", src: femsa1_2, caption: "" },
         { type: "image", src: femsa1_3, caption: "" },
         { type: "image", src: femsa1_4, caption: "" },
-        { type: "video", src: videoFemsa1, caption: "" },
+        //{ type: "video", src: videoFemsa1, caption: "" },
         //{ type: "youtube", src: "https://www.youtube.com/embed/dQw4w9WgXcQ", caption: "Gameplay walkthrough" },
       ],
       lessonsLearned: [
@@ -656,7 +655,7 @@ export const projects: Project[] = [
       resultsNarrative:
         "",
       media: [
-        { type: "video", src: videoBimboWow_1, caption: "" },
+        //{ type: "video", src: videoBimboWow_1, caption: "" },
         { type: "image", src: bimboWow_1, caption: "" },
         { type: "image", src: bimboWow_2, caption: "" },
         { type: "image", src: bimboWow_3, caption: "" },
@@ -774,7 +773,7 @@ export const projects: Project[] = [
       resultsNarrative:
         "",
       media: [
-        { type: "video", src: videoBimboAR_1, caption: "" },
+        //{ type: "video", src: videoBimboAR_1, caption: "" },
         { type: "image", src: bimboAR_1, caption: "" },
         { type: "image", src: bimboAR_2, caption: "" },
         { type: "image", src: bimboAR_3, caption: "" },
