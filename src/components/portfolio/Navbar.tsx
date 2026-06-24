@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
-
+import { useLanguage } from "@/i18n/LanguageContext";
 const links = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
@@ -11,7 +11,7 @@ const links = [
   { href: "#future", label: "Future Tech" },
   { href: "#contact", label: "Contact" },
 ];
-
+//const { language, setLanguage } = useLanguage();
 export function Navbar() {
   const [open, setOpen] = useState(false);
   return (
@@ -42,6 +42,7 @@ export function Navbar() {
           >
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
           </Button>
+
         </div>
       </nav>
       {open && (

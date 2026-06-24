@@ -1,5 +1,5 @@
-import { Link } from "@tanstack/react-router";
 import * as Icons from "lucide-react";
+import { Link } from "react-router-dom";
 import {
   ArrowLeft,
   ExternalLink,
@@ -43,7 +43,7 @@ function DynamicIcon({ name, className }: { name: string; className?: string }) 
   return <Cmp className={className} />;
 }
 
-export function CaseStudy({
+export  function CaseStudy({
   project,
   related,
 }: {
@@ -60,7 +60,7 @@ export function CaseStudy({
           A detailed case study for this project is coming soon.
         </p>
         <Button asChild className="mt-8">
-          <Link to="/" hash="projects">
+          <Link to="/#projects">
             <ArrowLeft className="mr-2 size-4" /> Back to Projects
           </Link>
         </Button>
@@ -74,7 +74,7 @@ export function CaseStudy({
       <header className="relative overflow-hidden border-b border-border bg-gradient-to-b from-primary/5 via-background to-background">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
           <Button asChild variant="ghost" size="sm" className="-ml-3 mb-8">
-            <Link to="/" hash="projects">
+            <Link to="/#projects">
               <ArrowLeft className="mr-1.5 size-4" /> Back to Projects
             </Link>
           </Button>
@@ -123,7 +123,7 @@ export function CaseStudy({
                   </Button>
                 )}
                 <Button asChild variant="ghost">
-                  <Link to="/" hash="projects">
+                  <Link to="/#projects">
                     <ArrowLeft className="mr-1.5 size-4" /> Back to Projects
                   </Link>
                 </Button>
@@ -426,7 +426,7 @@ export function CaseStudy({
             </div>
             <div className="mt-12 text-center">
               <Button asChild variant="outline">
-                <Link to="/" hash="projects">
+                <Link to="/#projects">
                   <ArrowLeft className="mr-1.5 size-4" /> Back to all projects
                 </Link>
               </Button>

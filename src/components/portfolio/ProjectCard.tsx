@@ -1,5 +1,5 @@
 import { ArrowRight, ExternalLink, Github, Images } from "lucide-react";
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import type { Project } from "./data";
@@ -44,8 +44,8 @@ export function ProjectCard({ project }: { project: Project }) {
         </div>
         <div className="mt-6 flex flex-wrap gap-2 pt-2">
           <Button asChild size="sm">
-            <Link to="/projects/$slug" params={{ slug: project.slug }}>
-              View Case Study <ArrowRight className="ml-1.5 size-3.5" />
+<Link to={`/projects/${project.slug}`}>
+          View Case Study <ArrowRight className="ml-1.5 size-3.5" />
             </Link>
           </Button>
           {project.demoUrl && (
