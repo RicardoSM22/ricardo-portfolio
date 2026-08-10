@@ -9,7 +9,7 @@ import femsa1_1 from "@/assets/Femsa1/f1.jpg";
 import femsa1_2 from "@/assets/Femsa1/f2.jpg";
 import femsa1_3 from "@/assets/Femsa1/f3.jpg";
 import femsa1_4 from "@/assets/Femsa1/f4.jpg";
-//import videoFemsa1 from "@/assets/Femsa1/Ejecución de ventas FEMSA.mp4";
+//import videoFemsa1 from "@/assets/Femsa1/;
 import femsa2_1 from "@/assets/femsa2/f1.jpg";
 import femsa2_2 from "@/assets/femsa2/f2.jpg";
 import femsa2_3 from "@/assets/femsa2/f3.jpg";
@@ -21,7 +21,7 @@ import femsa2_8 from "@/assets/femsa2/f8.jpg";
 import femsa2_9 from "@/assets/femsa2/f9.jpg";
 import femsa2_10 from "@/assets/femsa2/f10.jpg";
 import femsa2_11 from "@/assets/femsa2/f11.jpg";
-//import videoFemsa2_1 from "@/assets/femsa2/Simulador VR de manejo FEMSA1.mp4";
+import videoFemsa2_1 from "@/assets/femsa2/video1.jpg";
 //import videoFemsa2_2 from "@/assets/femsa2/Simulador VR de manejo FEMSA Prototipo.mp4";
 //import videoFemsa2_3 from "@/assets/femsa2/Simulador VR de manejo FEMSA360.mp4";
 import bimboWow_1 from "@/assets/BimboWow/bw1.jpg";
@@ -40,13 +40,22 @@ import bimboAR_6 from "@/assets/BimboAR/info_5.png";
 import bimboAR_7 from "@/assets/BimboAR/info_6.png";
 import bimboAR_8 from "@/assets/BimboAR/info_7.png";
 //import videoBimboAR_1 from "@/assets/BimboAR/BImboAR.mp4";
+import bimboD_1 from "@/assets/BimboDeteccion/bd1.jpg"
+import bimboD_2 from "@/assets/BimboDeteccion/bd2.jpg"
+//import videoBimboD_1 from "@/assets/BimboAR/BImboAR.mp4";
+import infovir1 from "@/assets/Infovir/infovir1.jpg";
+import infovir2 from "@/assets/Infovir/infovir2.jpg";
+import infovir3 from "@/assets/Infovir/infovir3.jpg";
+import infovir4 from "@/assets/Infovir/infovir4.jpg";
+
+
 import truckImg from "@/assets/project-truck.jpg";
 import enterpriseImg from "@/assets/project-enterprise.jpg";
 import planetariumImg from "@/assets/project-planetarium.jpg";
 import mobileImg from "@/assets/project-mobile.jpg";
 
 export type MediaItem = {
-  type: "image" | "video" | "youtube" | "webgl";
+  type: "image" | "video" | "youtube" | "webgl" |"onedrive";
   src: string;
   caption?: string;
   thumbnail?: string;
@@ -98,11 +107,11 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
+  { //VR Driver Assessment Simulator for Commercial Truck Operators
     slug: "VR-Driver-Assessment-Simulator-for-Commercial-Truck-Operators",
     title: "VR Driver Assessment Simulator for Commercial Truck Operators",
     image: femsa2_1,
-    technologies: ["Unity", "C#", "Oculus Rift", "Arduino","HLSL","Shader Programming", "VR Development", "Vehicle Simulation", "Particle Systems","Traffic Systems", "Real-Time Metrics","JSON","Enterprise Training Systems"],
+    technologies: ["Unity", "C#", "Oculus Rift", "Arduino", "HLSL", "Shader Programming", "VR Development", "Vehicle Simulation", "Particle Systems", "Traffic Systems", "Real-Time Metrics", "JSON", "Enterprise Training Systems"],
     description:
       "A virtual reality truck-driving simulator designed to assess and improve the performance of commercial vehicle operators.",
     responsibilities: [
@@ -188,7 +197,7 @@ export const projects: Project[] = [
           description:
             "Driving events and evaluation data are transmitted for instructor monitoring and reporting.",
         },
-                {
+        {
           icon: "Construction",
           title: "Dynamic Traffic System",
           description:
@@ -236,7 +245,7 @@ export const projects: Project[] = [
           description:
             "Implemented custom HLSL shaders capable of simulating: A) Water droplets. B) Humidity buildup. C) Water streaks. D) Windshield cleaning synchronization. The system dynamically reacted to windshield wiper activation, removing water accumulation in real time.",
         },
-          {
+        {
           title: "Performance in VR",
           description:
             "Maintaining smooth VR performance while rendering: A) Traffic vehicles. B) Dynamic weather. C) Particle systems. D) Large environments. Required continuous optimization and careful resource management.",
@@ -247,7 +256,7 @@ export const projects: Project[] = [
         { metric: "", label: "Enabled safe evaluation of hazardous driving situations." },
         { metric: "", label: "Standardized driver training procedures." },
         { metric: "", label: "Improved consistency in performance evaluations." },
-         { metric: "", label: "Provided instructors with real-time performance metrics." },
+        { metric: "", label: "Provided instructors with real-time performance metrics." },
         { metric: "", label: "Increased immersion through physical cockpit integration." },
         { metric: "", label: "Successfully deployed for Coca-Cola FEMSA training initiatives." },
         { metric: "", label: "ILater adapted for use by additional enterprise clients, including Bimbo. Ricolino" },
@@ -255,7 +264,7 @@ export const projects: Project[] = [
       resultsNarrative:
         "",
       media: [
-        //{ type: "video", src: videoFemsa2_1, caption: "" },
+        { type: "onedrive", src: "https://1drv.ms/v/c/377fd27ea1019dea/IQDqnQGhftJ_IIA3hQ4AAAAAAU5ngYGGYKA3y8dD28XUcSE", caption: "",thumbnail: videoFemsa2_1, },
         //{ type: "video", src: videoFemsa2_2, caption: "" },
         //{ type: "video", src: videoFemsa2_3, caption: "" },
         { type: "image", src: femsa2_1, caption: "" },
@@ -289,11 +298,11 @@ export const projects: Project[] = [
     },
   },
 
-  {
+  {//VR Retail Execution Training Simulator
     slug: "VR-Retail-Execution-Training-Simulator",
     title: "VR Retail Execution Training Simulator",
     image: femsa1_1,
-    technologies: ["Unity", "C#", "VR","Oculus Rift","VR Interaction Systems","UI/UX","Drag & Drop Systems","Validation Logic","Performance Evaluation Systems","REST APIs","JSON"," 3D Environments"],
+    technologies: ["Unity", "C#", "VR", "Oculus Rift", "VR Interaction Systems", "UI/UX", "Drag & Drop Systems", "Validation Logic", "Performance Evaluation Systems", "REST APIs", "JSON", " 3D Environments"],
     description:
       "Virtual Reality training and evaluation system developed for FEMSA sales teams.",
     responsibilities: [
@@ -333,7 +342,7 @@ export const projects: Project[] = [
         "The simulator automatically validates product placement, evaluates user decisions, calculates performance scores, and generates training results that can be reviewed by instructors through external reporting systems.",
         "By combining realistic VR interactions with automated evaluation, the solution provides a scalable training environment that helps standardize merchandising practices and improve employee preparedness before working in real stores.",
       ],
-      roles: ["Unity", "C#", "Oculus Rift","VR Interaction Systems", "UI/UX", "Drag & Drop Systems", "Validation Logic", "Performance Evaluation Systems", "REST APIs","JSON", "3D Environments"],
+      roles: ["Unity", "C#", "Oculus Rift", "VR Interaction Systems", "UI/UX", "Drag & Drop Systems", "Validation Logic", "Performance Evaluation Systems", "REST APIs", "JSON", "3D Environments"],
       roleResponsibilities: [
         "Responsible for the complete development of the VR simulation experience, including gameplay systems, interaction mechanics, UI implementation, validation logic, and training workflows.",
 
@@ -397,7 +406,7 @@ export const projects: Project[] = [
           title: "",
           description:
             "Additional challenges included creating efficient VR interaction workflows, managing large numbers of interactive objects, and maintaining performance across complex 3D environments while ensuring a smooth user experience.",
-        },        
+        },
       ],
       results: [
         { metric: "", label: "Enabled employees to practice store organization procedures in a risk-free virtual environment." },
@@ -434,11 +443,11 @@ export const projects: Project[] = [
       ],
     },
   },
-{
+  {//Enterprise-XR-Training-Platform
     slug: "Enterprise-XR-Training-Platform",
     title: "Enterprise XR Training Platform",
     image: xpertmePage,
-    technologies: ["Unity", "C#", "Oculus VR", "Android","UI/UX Systems","REST APIs", "JSON", "Multimedia Streaming", "Video 360°","3D Models", "Audio Systems",],
+    technologies: ["Unity", "C#", "Oculus VR", "Android", "UI/UX Systems", "REST APIs", "JSON", "Multimedia Streaming", "Video 360°", "3D Models", "Audio Systems",],
     description:
       "Enterprise training and certification platform developed for Oculus VR and Android devices. The system enables employees to access interactive learning content, complete practical exercises, perform assessments, and track their certification progress. The platform integrates with backend services to synchronize user activity, scores, training records, and progress reports, allowing instructors and administrators to monitor learning outcomes through web-based management tools.",
     responsibilities: [
@@ -545,22 +554,144 @@ export const projects: Project[] = [
       ],
     },
   },
-{
+  {//InfoVir AR
+    slug: "InfoVir-AR–Augmented-Reality-COVID-19-Educational-App",
+    title: "InfoVir AR – Augmented Reality COVID-19 Educational App",
+    image: infovir4,
+    technologies: ["Unity", "C#", "AR Foundation / ARCore", "Android", "Google Play", "3D Animation Integration", "Mobile UI/UX"],
+    description:
+      "Interactive AR mobile application that educates users about COVID-19 through 3D visualizations and animations.",
+    responsibilities: [
+      "Developed the complete application in Unity.",
+      "Implemented the application flow and navigation.",
+      "Integrated augmented reality experiences.",
+      "Programmed interactive educational modules.",
+      "Implemented 3D animations and scene transitions.",
+      "Developed the virus visualization module.",
+      "Implemented symptom visualization.",
+      "Developed the virus transmission simulation.",
+      "Implemented prevention demonstrations.",
+      "Created the social distancing visualization.",
+      "Optimized the application for Android devices.",
+      "Prepared the application for Google Play deployment."
+    ],
+    demoUrl: "https://www.behance.net/gallery/100400303/App-de-AR-INFOVIR-Covid19-?tracking_source=search_projects_recommended%7Cinfovir",
+    //githubUrl: "#",
+    caseStudy: {
+      category: "Image Tracking · AR.js · HTML5 · WebGL",
+      duration: "1 months · 2019",
+      //videoUrl: "https://www.youtube.com/watch?v=0uH3qRYjcCc",
+      //liveDemoUrl: "#",
+      overview: "During the COVID-19 pandemic, there was an urgent need to communicate health information in a way that was easy to understand for all audiences. Traditional text-based information was often less engaging, making it difficult for users to visualize how the virus spreads and how preventive measures reduce infection risk.",
+      goal: "Develop an augmented reality application that helps users understand COVID-19 by presenting educational content in an engaging and interactive way. The app explains the virus, its symptoms, transmission methods, prevention measures, and recommended social distancing using 3D animations.",
+      problem: [
+        "Public health campaigns needed a more engaging way to explain COVID-19 concepts. Many users struggled to understand invisible processes such as virus transmission and safe interpersonal distancing through traditional media alone.",
+      ],
+      solution: [
+        "Developed an augmented reality application that transforms educational content into interactive 3D experiences, allowing users to visualize the virus, understand transmission methods, and learn prevention techniques in a more intuitive and memorable way.",
+
+      ],
+      roles: ["Unity Developer"],
+      roleResponsibilities: [
+        "I was responsible for the complete application development in Unity, implementing the user experience, augmented reality interactions, navigation, and educational modules.",
+
+      ],
+      features: [
+        {
+          icon: "Worm",
+          title: "Interactive Virus Visualization",
+          description:
+            "Display of a detailed 3D coronavirus model in augmented reality with educational explanations.",
+        },
+        {
+          icon: "Search",
+          title: "Symptoms Explorer",
+          description:
+            "Interactive animations explaining the most common symptoms associated with COVID-19.",
+        },
+        {
+          icon: "SunMedium",
+          title: "Virus Transmission Simulation",
+          description:
+            "Visual demonstrations showing how respiratory droplets spread between people.",
+        },
+        {
+          icon: "ShieldCogCorner",
+          title: "Prevention Guidelines",
+          description:
+            "Educational AR content demonstrating preventive measures such as hand hygiene and mask usage.",
+        },
+        {
+          icon: "RulerDimensionLine",
+          title: "Social Distancing Visualization",
+          description:
+            "Real-scale augmented reality visualization illustrating the recommended safe distance between individuals.",
+        },
+      ],
+      challenges: [
+        {
+          title: "Reliable Image Detection",
+          description:
+            "Ensuring the mural could be recognized consistently despite varying camera angles, lighting conditions, and mobile devices.",
+        },
+        {
+          title: "Browser-Based Deployment",
+          description:
+            "Delivering an augmented reality experience without requiring users to download or install an application.",
+        },
+        {
+          title: "Lightweight User Experience",
+          description:
+            "Keeping the experience simple enough for non-technical users while maintaining acceptable performance on mobile devices.",
+        },
+      ],
+      results: [
+        { metric: "", label: "Successfully published as an Android application." },
+        { metric: "", label: "Improved accessibility to educational COVID-19 content." },
+        { metric: "", label: "Combined AR technology with health education." },
+        { metric: "", label: "Delivered an engaging alternative to static informational materials." },
+        { metric: "", label: "Demonstrated the use of Unity beyond gaming in healthcare and public awareness." },
+      ],
+      resultsNarrative:
+        "",
+      media: [
+        //{ type: "video", src: videoBimboAR_1, caption: "" },
+        { type: "image", src: infovir1, caption: "" },
+        { type: "image", src: infovir2, caption: "" },
+        { type: "image", src: infovir3, caption: "" },
+
+      ],
+      lessonsLearned: [
+        "Designing intuitive educational experiences with augmented reality.",
+        "Optimizing AR performance for mobile devices.",
+        "Structuring educational content into interactive modules.",
+        "Integrating 3D assets into mobile AR applications.",
+        "Creating user experiences that simplify complex concepts through visualization."
+      ],
+      futureImprovements: [
+        "Multi-language support.",
+        "Interactive quizzes and knowledge assessments.",
+        "Healthcare analytics dashboard.",
+        "Updated educational content for new diseases."
+      ],
+    },
+  },
+  {
     slug: "Bimbo-WOW–Interactive-360°-Learning Experience",
     title: "Bimbo WOW – Interactive 360° Learning Experience",
     image: bimboWow_5,
-    technologies: ["Three.js", "JavaScript", "WebGL", "HTML5","CSS3","360° Rendering", "Interactive Learning Systems"],
+    technologies: ["Three.js", "JavaScript", "WebGL", "HTML5", "CSS3", "360° Rendering", "Interactive Learning Systems"],
     description:
       "Bimbo WOW is an interactive 360° web experience developed using Three.js and WebGL technologies.",
     responsibilities: [
-        "Implemented 360° environment rendering using Three.js.",
-        "Integrated 3D objects into interactive scenes.",
-        "Developed object discovery mechanics.",
-        "Implemented mission progression systems.",
-        "Created trivia interaction workflows.",
-        "Integrated multimedia educational content.",
-        "Optimized browser performance and loading processes.",
-        "Collaborated with content and design teams to build interactive learning experiences.",
+      "Implemented 360° environment rendering using Three.js.",
+      "Integrated 3D objects into interactive scenes.",
+      "Developed object discovery mechanics.",
+      "Implemented mission progression systems.",
+      "Created trivia interaction workflows.",
+      "Integrated multimedia educational content.",
+      "Optimized browser performance and loading processes.",
+      "Collaborated with content and design teams to build interactive learning experiences.",
     ],
     //demoUrl: "#",
     //githubUrl: "#",
@@ -609,7 +740,7 @@ export const projects: Project[] = [
           description:
             "Interactive trivia questions validate user understanding.",
         },
-                {
+        {
           icon: "Library",
           title: "Multimedia Learning Content",
           description:
@@ -639,7 +770,7 @@ export const projects: Project[] = [
           description:
             "Creating a seamless transition between exploration mechanics, trivia challenges, and multimedia learning materials.",
         },
-          {
+        {
           title: "Performance Optimization",
           description:
             "Balancing visual quality and responsiveness across different devices and browsers.",
@@ -650,7 +781,7 @@ export const projects: Project[] = [
         { metric: "", label: "Increased user interaction through gamified learning mechanics." },
         { metric: "", label: "Combined exploration, assessment, and educational content within a single platform." },
         { metric: "", label: "Enabled learning experiences without requiring software installation." },
-         { metric: "", label: "Expanded the use of immersive technologies beyond traditional VR applications." },
+        { metric: "", label: "Expanded the use of immersive technologies beyond traditional VR applications." },
       ],
       resultsNarrative:
         "",
@@ -677,17 +808,17 @@ export const projects: Project[] = [
     slug: "Bimbo-AR-Training Wall",
     title: "Bimbo AR Training Wall",
     image: bimboAR_1,
-    technologies: ["AR.js", "A-Frame", "Three.js", "JavaScript","HTML5","CSS3", "WebAR", "Image Tracking", ],
+    technologies: ["AR.js", "A-Frame", "Three.js", "JavaScript", "HTML5", "CSS3", "WebAR", "Image Tracking",],
     description:
       "A WebAR experience developed for Grupo Bimbo that allows employees to access workplace guidance and operational recommendations by scanning a large informational mural using their smartphone camera.",
     responsibilities: [
-        "Developed the complete WebAR application.",
-        "Implemented image tracking and recognition systems.",
-        "Integrated AR.js with A-Frame and Three.js.",
-        "Created content activation workflows.",
-        "Implemented mobile web interactions.",
-        "Optimized browser performance.",
-        "Tested image recognition behavior under different conditions.",
+      "Developed the complete WebAR application.",
+      "Implemented image tracking and recognition systems.",
+      "Integrated AR.js with A-Frame and Three.js.",
+      "Created content activation workflows.",
+      "Implemented mobile web interactions.",
+      "Optimized browser performance.",
+      "Tested image recognition behavior under different conditions.",
     ],
     //demoUrl: "#",
     //githubUrl: "#",
@@ -753,12 +884,12 @@ export const projects: Project[] = [
           description:
             "Ensuring the mural could be recognized consistently despite varying camera angles, lighting conditions, and mobile devices.",
         },
-                {
+        {
           title: "Browser-Based Deployment",
           description:
             "Delivering an augmented reality experience without requiring users to download or install an application.",
         },
-                {
+        {
           title: "Lightweight User Experience",
           description:
             "Keeping the experience simple enough for non-technical users while maintaining acceptable performance on mobile devices.",
@@ -796,138 +927,155 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "vr-truck-driver-assessment-simulator",
-    title: "VR Truck Driver Assessment Simulator",
-    image: truckImg,
-    technologies: ["Unity", "C#", "VR", "Arduino"],
+    slug: "VR-Hazard-Detection-&-Driver-Awareness-Training-Platform",
+    title: "VR Hazard Detection & Driver Awareness Training Platform",
+    image: bimboD_1,
+    technologies: ["Unity", "C#", "Node.js", "Express.js", "Socket.IO", "Google Cardboard", "VR Development", "Real-Time Communication", "Multiplayer Systems", "360° Video", "Web Dashboards"],
     description:
-      "Immersive VR simulator to evaluate professional truck driver performance using real steering hardware and synchronized telemetry.",
+      "A multiplayer VR training platform developed for Grupo Bimbo to improve driver awareness and hazard recognition during onboarding programs.",
     responsibilities: [
-      "Built the core driving physics and VR interaction layer in Unity",
-      "Integrated Arduino-based steering wheel and pedals via serial protocol",
-      "Designed scoring system and performance dashboards",
+      "Developed the complete VR training application in Unity.",
+      "Implemented 360° video playback systems.",
+      "Developed real-time multiplayer synchronization.",
+      "Implemented Socket.IO communication systems.",
+      "Integrated Node.js backend services.",
+      "Created instructor-controlled session management features.",
+      "Developed attention-tracking logic.",
+      "Implemented quadrant-based hazard detection systems.",
+      "Developed controller-based interaction workflows.",
+      "Optimized mobile VR performance for Google Cardboard devices.",
+      "Integrated real-time communication between trainees and instructors."
     ],
-    demoUrl: "#",
-    githubUrl: "#",
+    //demoUrl: "#",
+    //githubUrl: "#",
     caseStudy: {
-      category: "VR · Simulation · Enterprise Training",
-      duration: "8 months · 2023 — 2024",
-      videoUrl: "#",
-      liveDemoUrl: "#",
-      overview:
-        "A high-fidelity virtual reality simulator built in Unity that lets fleet operators evaluate professional truck drivers in realistic, repeatable scenarios. The system pairs a VR headset with a physical Arduino-driven steering rig, pedals and gear shifter to deliver a true-to-life driving experience while logging every action for assessment.",
-      goal: "Replace expensive, risky and inconsistent on-road driver evaluations with a safe, standardized and data-driven VR assessment that produces objective scoring across candidates.",
+      category: "UInteractive 360° ·WebGL",
+      duration: "1 months · 2019",
+      //videoUrl: "https://www.youtube.com/watch?v=0uH3qRYjcCc",
+      //liveDemoUrl: "#",
+      overview: "Instead of relying solely on live road demonstrations, the system uses real-world 360° driving footage that exposes trainees to common risks encountered during delivery operations. Participants use mobile VR headsets (Google Cardboard) to observe driving scenarios while instructors guide discussions, pause videos, ask questions, and evaluate hazard detection skills. The platform tracks where each trainee is looking within the 360° environment and provides instructors with real-time visibility through a web-based monitoring dashboard.",
+      goal: "Provide a scalable and repeatable training solution that helps new drivers identify road hazards through guided 360° video experiences while allowing instructors to monitor participant attention and engagement in real time.",
       problem: [
-        "Traditional driver assessments required physical trucks, certified instructors and closed tracks — costly, slow and hard to scale.",
-        "Evaluations were subjective: two instructors could grade the same maneuver differently, making hiring decisions inconsistent.",
-        "Dangerous scenarios (skids, brake failure, fatigue, night driving) could not be reproduced safely in real life.",
-        "Fleet operators had no structured telemetry to compare candidates or measure improvement over time.",
+        "Training new drivers traditionally required instructors to physically drive through city routes and point out potential hazards.",
+        "# This approach created several limitations:",
+        "Hazard situations were unpredictable.",
+        "Some risks might not appear during training sessions.",
+        "Training quality varied between groups.",
+        "Real-world training involved operational costs.",
+        "It was difficult to measure whether trainees actually identified hazards.",
+        "The company needed a standardized and repeatable training solution capable of exposing all drivers to the same safety-critical situations.",
       ],
       solution: [
-        "Designed a modular Unity simulation with realistic vehicle dynamics tuned against real truck telemetry.",
-        "Chose Unity for its mature VR pipeline (XR Interaction Toolkit), strong physics engine, fast iteration and ability to ship to multiple headsets.",
-        "Built an Arduino-to-Unity serial bridge so steering, pedals and shifter map 1:1 to the in-sim truck.",
-        "Implemented a scenario engine: instructors can pick city, highway, mountain or emergency scripts and tweak weather, traffic and time of day.",
-        "Layered an automated scoring system that records every input, infraction and reaction time, then exports a PDF report per driver.",
+        "Developed a multiplayer VR training platform based on real 360° driving footage.",
+        "Trainees watch immersive driving scenarios using mobile VR headsets while instructors control playback remotely through a web dashboard.",
+        "The experience gamifies the learning process while maintaining accessibility through standard web browsers.",
+        "Participants use a handheld controller with a joystick to identify hazards by selecting the area where they detected a risk.",
+        "The platform tracks head orientation and hazard selections in real time, allowing instructors to monitor participant attention, evaluate responses, and guide discussions throughout the training session."
       ],
-      roles: ["Lead Unity Developer", "VR Engineer", "Simulation Systems Engineer"],
+      roles: ["Unity Developer", "Real-Time Systems Engineer"],
       roleResponsibilities: [
-        "Owned the technical architecture end-to-end, from VR rig integration to reporting",
-        "Implemented vehicle physics, gear box behavior and tire-friction model",
-        "Built the Arduino ↔ Unity serial protocol and hardware calibration tools",
-        "Designed the scoring engine and PDF assessment report generator",
-        "Coordinated with 3D artists to optimize assets for 90 FPS stereo rendering",
-        "Mentored a junior developer through the scenario editor implementation",
+        "Responsible for VR application development, multiplayer synchronization systems, real-time communication architecture, and instructor monitoring integration.",
+
       ],
       features: [
         {
-          icon: "Gauge",
-          title: "Realistic Truck Physics",
+          icon: "Globe",
+          title: "360° Real-World Driving Footage",
           description:
-            "Mass, suspension, gear ratios and tire grip tuned to match real Class-8 truck telemetry.",
+            "Training based on actual driving environments and real traffic situations.",
         },
         {
-          icon: "Gamepad2",
-          title: "Hardware-in-the-loop",
+          icon: "LayoutDashboard",
+          title: "Instructor-Controlled Sessions",
           description:
-            "Arduino-controlled steering, pedals and gear shifter wired directly into the simulation loop.",
+            "Play, pause, and video management from a web dashboard.",
         },
         {
-          icon: "Map",
-          title: "Scenario Library",
+          icon: "RectangleGoggles",
+          title: "Multiplayer VR Experience",
           description:
-            "City, highway, mountain pass and emergency scripts with adjustable weather and traffic.",
+            "Multiple trainees connected simultaneously.",
         },
         {
-          icon: "ClipboardCheck",
-          title: "Automated Scoring",
+          icon: "Biohazard",
+          title: "Hazard Detection Exercises",
           description:
-            "Per-maneuver scoring, infraction tracking and reaction-time analysis with exportable reports.",
+            "Participants actively identify risks within the environment.",
         },
         {
-          icon: "Eye",
-          title: "Instructor Dashboard",
+          icon: "MonitorCloud",
+          title: "Real-Time Attention Monitoring",
           description:
-            "Live monitor view so evaluators can follow the driver and annotate the session in real time.",
+            "Instructors can see where each participant is looking.",
         },
         {
-          icon: "Headset",
-          title: "Multi-Headset Support",
+          icon: "Building",
+          title: "3x3 Quadrant Tracking System",
           description:
-            "Compatible with Meta Quest, Pico and tethered PCVR headsets through the XR Interaction Toolkit.",
+            "Visual representation of trainee focus areas.",
+        },
+        {
+          icon: "ScanEye",
+          title: "Interactive Risk Identification",
+          description:
+            "Drivers use a controller to mark detected hazards.",
+        },
+        {
+          icon: "ShieldUser",
+          title: "Standardized Safety Training",
+          description:
+            "Consistent exposure to critical driving situations.",
         },
       ],
       challenges: [
         {
-          title: "Sustained 90 FPS in stereo VR",
+          title: "Real-Time Synchronization",
           description:
-            "Large outdoor scenes with dynamic traffic stressed the frame budget. Solved with aggressive LODs, GPU instancing, occlusion culling and a custom traffic pooling system.",
+            "Maintaining synchronization between multiple trainees while instructors controlled playback remotely.",
         },
         {
-          title: "Low-latency hardware integration",
+          title: "Attention Tracking",
           description:
-            "The Arduino loop had to feed steering and pedal data every frame without stutter. Built an asynchronous serial reader with a fixed-tick interpolation layer.",
+            "Designing a lightweight solution capable of tracking user focus direction and transmitting the information in real time.",
         },
         {
-          title: "Cross-headset compatibility",
+          title: "Hazard Detection System",
           description:
-            "Different runtimes (OpenXR, Oculus, Pico) exposed inputs differently. Abstracted everything behind an internal XR input layer to keep gameplay code identical.",
+            "Creating a mechanism that allowed trainees to identify risks naturally within a 360° environment using a handheld controller.",
         },
         {
-          title: "Motion comfort",
+          title: "Low-Cost VR Hardware",
           description:
-            "Trucks accelerate and brake hard, which can cause sim sickness. Tuned camera rigging, FOV vignettes and cabin reference points to keep sessions comfortable for 20+ minutes.",
-        },
-        {
-          title: "Deterministic scoring",
-          description:
-            "Two identical runs had to produce identical scores. Replaced floating-point accumulators with fixed-step physics ticks and seeded traffic to guarantee reproducibility.",
+            "Delivering immersive experiences on mobile-based VR devices while maintaining acceptable performance.",
         },
       ],
       results: [
-        { metric: "−60%", label: "Cost per driver assessment" },
-        { metric: "3×", label: "Drivers evaluated per day" },
-        { metric: "+45%", label: "Trainee engagement vs. classroom" },
-        { metric: "0", label: "On-road incidents during evaluation" },
+        { metric: "", label: "Standardized driver safety training procedures." },
+        { metric: "", label: "Reduced dependency on live route demonstrations." },
+        { metric: "", label: "Enabled repeatable exposure to critical hazard scenarios." },
+        { metric: "", label: "Improved instructor visibility into trainee engagement." },
+        { metric: "", label: "Created a scalable onboarding solution for new drivers." },
+        { metric: "", label: "Allowed objective evaluation of hazard recognition skills." },
+        { metric: "", label: "Increased consistency across training sessions." },
       ],
       resultsNarrative:
-        "Deployed across multiple fleet operator sites, the simulator standardized driver evaluation, removed on-road risk during hiring, and gave HR teams comparable, data-backed scoring for every candidate.",
+        "",
       media: [
-        { type: "image", src: truckImg, caption: "Driver cabin view inside the VR simulator" },
-        { type: "image", src: truckImg, caption: "Mountain pass scenario at dusk" },
-        { type: "image", src: truckImg, caption: "Instructor dashboard with live telemetry" },
-        { type: "youtube", src: "https://www.youtube.com/embed/dQw4w9WgXcQ", caption: "Gameplay walkthrough" },
+        //{ type: "video", src: videoBimboWow_1, caption: "" }, //agregar video
+
+        { type: "image", src: bimboD_1, caption: "" },
+        { type: "image", src: bimboD_2, caption: "" },
       ],
       lessonsLearned: [
-        "Investing early in a hardware abstraction layer paid off when new headsets and rigs were added later.",
-        "Realism matters less than consistency — evaluators valued reproducible scoring over photoreal graphics.",
-        "Pairing developers with real truck drivers during playtests surfaced issues no QA script would have caught.",
+        "Real-world footage can effectively simulate many training situations without requiring complex 3D environments.",
+        "Attention tracking provides valuable insight into trainee awareness.",
+        "Instructor-guided VR experiences can significantly improve learning outcomes.",
+        "Multiplayer synchronization can be applied beyond gaming scenarios to enterprise training applications."
       ],
       futureImprovements: [
-        "Multiplayer mode where an instructor shares the cabin in VR with the trainee",
-        "Eye-tracking integration to score mirror checks and situational awareness",
-        "Cloud-based fleet dashboard to aggregate scoring across regions",
-        "AI-generated traffic behaviors using reinforcement learning",
+        "Automated scoring systems.",
+        "Analytics dashboards.",
+        "Mixed Reality support."
       ],
     },
   },

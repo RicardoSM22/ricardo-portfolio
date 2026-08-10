@@ -361,6 +361,26 @@ export  function CaseStudy({
                       className="h-full w-full"
                     />
                   )}
+                    {m.type === "onedrive" && (
+                      <a
+                          href={m.src}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="relative block h-full w-full"
+                        >
+                          <img
+                            src={m.thumbnail}
+                            alt={m.caption ?? project.title}
+                            className="h-full w-full object-cover"
+                          />
+
+                          <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 shadow-lg">
+                              ▶
+                            </div>
+                          </div>
+                        </a>
+                  )}
                   {m.type === "webgl" && (
                     <iframe
                       src={m.src}
@@ -368,6 +388,7 @@ export  function CaseStudy({
                       className="h-full w-full"
                     />
                   )}
+                  
                 </div>
                 {m.caption && (
                   <figcaption className="border-t border-border px-4 py-3 text-xs text-muted-foreground">

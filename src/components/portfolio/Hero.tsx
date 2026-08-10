@@ -18,9 +18,7 @@ export function Hero() {
             XR Developer | Unity Engineer | AR/VR Solutions | Interactive Training Systems
           </p>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            I design and build immersive AR, VR and simulation systems for
-            enterprise — from industrial training simulators to interactive
-            experiences used by thousands of people.
+           I design and build enterprise XR software used for training, simulation and immersive learning across automotive, retail and industrial environments.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="lg">
